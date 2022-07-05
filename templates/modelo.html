@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Encuentra tu auto ideal</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/fonts/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/fonts/iconic/css/material-design-iconic-font.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/animate/animate.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/css-hamburgers/hamburgers.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/animsition/css/animsition.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/select2/select2.min.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/daterangepicker/daterangepicker.css')}}">
+    <link rel="stylesheet" type="text/css"
+        href="{{url_for('static', filename='css/assets/documents/vendor/noui/nouislider.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/assets/documents/css/util.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/assets/documents/css/main.css')}}">
+    <!-- Bulma --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!-- Boostrap  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+
+<form action="/result", method="post">
+    <div class="container-contact100">
+        <div class="wrap-contact100 ">
+            <form class="contact100-form validate-form ">
+                <span class="contact100-form-title">
+                    Introduce los valores del automovil
+                </span>
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Precio de Venta <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="precio">
+                            <option selected>Elija una opcion</option>
+                            <option value="0">mayor a 300000 </option>
+                            <option value="1">entre 150000 y 299999 </option>
+                            <option value="2">entre 50000 y 149999</option>
+                            <option value="3">Menor a 49999  </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+                
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Precio de mantenimiento <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="mantenimiento">
+                            <option selected>Elija una opcion</option>
+                            <option value="0">0 a 999 </option>
+                            <option value="1">1000 a 1999 </option>
+                            <option value="2">2000 a 2999 </option>
+                            <option value="3">mayor 3000 </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Numero de puertas <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="puertas">
+                            <option selected>Elija una opcion</option>
+                            <option value="2">2 </option>
+                            <option value="3">3 </option>
+                            <option value="4">4 </option>
+                            <option value="5">mayor 5 </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Numero de personas <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="personas">
+                            <option selected>Elija una opcion</option>
+                            <option value="2">2 </option>
+                            <option value="4">4 </option>
+                            <option  value="5">mayor 5 </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Tamaño de cajuela <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="cajuela">
+                            <option selected>Elija una opcion</option>
+                            <option value="1">Pequeña </option>
+                            <option value="2">Mediana </option>
+                            <option value="3">Grande </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Nivel de seguridad <b style="color:red">*</b></span>
+                    <div>
+                        <select class="js-select2" name="seguridad">
+                            <option selected>Elija una opcion</option>
+                            <option  value="1">Bajo </option>
+                            <option  value="2">Medio </option>
+                            <option  value="3">Alto </option>
+                        </select>
+                        <div class="dropDownSelect2"></div>
+                    </div>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button type="submit" class="contact100-form-btn">
+                        <span>
+                            Enviar
+                            <i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
+
+      
+    
+    <!--===============================================================================================-->
+    <script src="{{url_for('static', filename='css/assets/documents/vendor/jquery/jquery-3.2.1.min.js')}}"></script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/animsition/js/animsition.min.js')}} "></script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/bootstrap/js/popper.js')}} "></script>
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/bootstrap/js/bootstrap.min.js')}}  "></script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/select2/select2.min.js')}}  "></script>
+        <script>
+            $(".js-select2").each(function(){
+                $(this).select2({
+                    minimumResultsForSearch: 20,
+                    dropdownParent: $(this).next('.dropDownSelect2')
+                });
+    
+    
+                $(".js-select2").each(function(){
+                    $(this).on('select2:close', function (e){
+                        if($(this).val() == "Please chooses") {
+                            $('.js-show-service').slideUp();
+                        }
+                        else {
+                            $('.js-show-service').slideUp();
+                            $('.js-show-service').slideDown();
+                        }
+                    });
+                });
+            })
+        </script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/daterangepicker/moment.min.js')}} "></script>
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/daterangepicker/daterangepicker.js')}}  "></script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/countdowntime/countdowntime.js')}}   "></script>
+    <!--===============================================================================================-->
+        <script src="{{url_for('static', filename='css/assets/documents/vendor/noui/nouislider.min.js')}}"></script>
+       
+    <!--===============================================================================================-->
+        <script src="js/main.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+    
+   
+</body>
+
+</html>

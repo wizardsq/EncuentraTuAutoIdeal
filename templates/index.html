@@ -1,0 +1,171 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      
+      <meta charset="utf-8">
+      <meta http-equi v="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <title>Encuentra tu auto ideal</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+      <link rel="stylesheet" href="{{url_for('static', filename='css/responsive.css')}}">
+      <link rel="icon" href="{{url_for('static', filename='css/images/fevicon.png')}}" type="images/gif" />
+      <link rel="stylesheet" href="{{url_for('static', filename='css/jquery.mCustomScrollbar.min.css')}}">
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+   <body class="main-layout">
+      <header>
+         <div  class="head_top">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img style="width: 40%;"src="{{url_for('static', filename='css/images/Logo.png')}}" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9" style="margin-left: 38%; margin-top: -3.5%;">
+                        <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarsExample04">
+                              <ul class="navbar-nav mr-auto">
+                                 <li class="nav-item">
+                                    <a class="nav-link " href="index.html">Inicio</a>
+                                 </li>
+                                 <li class="nav-item ">
+                                    <a class="nav-link " href="#about">Sobre nosotros</a>
+                                 </li>
+
+                                 <li class="nav-item ">
+                                    <a class="nav-link" href="#us">Quienes somos</a>
+                                 </li>
+                                 
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <section class="banner_main">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="text-bg">
+                           <h1>Encuentra <br>Tu auto ideal</h1>
+                           <strong>Descubre la forma mas sencilla de escojer el mejor auto</strong>
+                           <span></span>
+                           <a href="/modelo.html">Comencemos</a>
+                        </div>
+                     </div>
+                     <div class="col-md-7 padding_right1">
+                        <div class="text-img">
+                           <figure><img src="{{url_for('static', filename='css/images/automoviles.png')}}" alt="#"/></figure>
+                           <h3>01</h3>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </header>
+
+      <div id="about" class="about">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage"  style="text-align:justify">
+                     <h2 style="text-align:center">Encuentra tu auto ideal</h2>
+                     <span>La adquisición de un automóvil siempre ha sido una decisión difícil de
+                        tomar, esto debido a que existen muchísimas opciones sea de marcas, precios y
+                        tamaños. Encuentra tu auto ideal, viene a solucionar este problema que muchas veces puede ser
+                        tedioso y molesto, implementando inteligencia artificil, Encuentra tu auto te ayudara a comparar y predecir entre todas tus opciones de autos
+                        cual de todas estas es la mejor. Para la prediccion y comparacion utiilizamos modelos de clasificaccion, utilizamos 4 tipos de modelos y en base a esos 4
+                        escojimos el mejor modelo.<a href="{{url_for('static', filename='css/assets/documents/Resultados_Cladificadores.docx')}}" target="_blank"> <span> <b style="color:#11e597">Explciación de modelos</b> </span> </a>
+                     </span>
+                  </div>
+               </div>
+            </div>
+            </div>
+         </div>
+      </div>
+      
+      <div id="us" class="best"> 
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>Sobre nosotros</h2>
+                  </div>
+               </div>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="best_box">
+                     <section >
+                        <img style="border-radius: 100%; width: 35%; "  src="{{url_for('static', filename='css/images/foto.jpg')}}" alt="">
+                     </section>
+                     <p>
+                        <b>Geovanni Dzul Escobar</b> 
+                         <br>
+                           Ing. Gestion de Tec. &nbsp;/&nbsp; Redes
+                           <br>
+                           <br>
+                           <a href="https://www.facebook.com/profile.php?id=100014164861509" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+                           <a href="#" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+                           <a href="https://github.com/wizardsq/" target="_blank" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="best_box">
+                     <section ">
+                        <img style="border-radius: 50%; width: 35%;"  src="{{url_for('static', filename='css/images/javi.jpg')}}" alt="">
+                     </section>
+                     <p>
+                        <b>Javier Ramon Gonzales</b> 
+                         <br>
+                           Ing. Sistemas Comp. / Diseño Web
+                        <br>
+                        <br>
+                           <a href="https://www.facebook.com/javier.ramongonzalez.948/" target="_blank" class="btn-social btn-facebook"><i class="fa fa-facebook"></i></a>
+                           <a href="https://www.instagram.com/javier._.rg/" target="_blank" class="btn-social btn-instagram"><i class="fa fa-instagram"></i></a>
+                           <a href="https://github.com/Javier189-web" target="_blank" class="btn-social btn-github"><i class="fa fa-github-alt"></i></a>
+                         
+                     </p>                  
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         <footer>
+            <div class="footer">
+               <div class="copyright">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <p>© 2021 All Rights Reserved Tu auto ideal</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+   </body>
+</html>
+
